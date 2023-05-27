@@ -36,3 +36,9 @@ Funcionalidades e Ações
 ->
 ->
 ->
+
+# ANOTAÇÕES:
+
+1.
+Métodos entre 2 '_', ex.: def __nome do método__(self): pass
+> Indica que é um método especial ou um método mágico. Conhecido como dunder method, contração de double underscore
