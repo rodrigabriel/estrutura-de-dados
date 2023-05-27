@@ -30,6 +30,7 @@ Funcionalidades e Ações
 -> Busca - de forma ordenada ou busca binária.
 -> Remoção
 -> Traversals (percorrimento) - pré-ordem, em ordem e pós ordem.
+# Pré-ordem: 1-visita o nó raiz, 2-visita a subárvore a esquerda, 3-visita a subárvore a direita
 -> 
 ->
 ->
