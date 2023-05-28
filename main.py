@@ -37,23 +37,28 @@ class ArvoreBinaria:
                 self._recursaoDeInsercao(valor, noAtual.direito)
             
 
-    def _mUDARNOME():
-        pass
+    def imprimirInOrdem(self):
+        self._recursaoInOrdem(self.raiz)
 
-    def preOrdem(self):
-        pass
+    def _recursaoInOrdem(self, noAtual):
+        if noAtual is not None:
+            self._recursaoInOrdem(noAtual.esquerdo)
+            print(noAtual.valor)
+            self._recursaoInOrdem(noAtual.direito)
 
     def remover(self, valor):
         pass
 
 
 arvore = ArvoreBinaria()
+
 arvore.adicionar(5)
 arvore.adicionar(8)
 arvore.adicionar(1)
-arvore.adicionar(5)
+arvore.adicionar(7)
 arvore.adicionar(6)
 
+arvore.imprimirInOrdem()
 
 
 
