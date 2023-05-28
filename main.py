@@ -38,13 +38,16 @@ class ArvoreBinaria:
             
 
     def imprimirInOrdem(self):
+        print('Impressão in ordem:')
         self._recursaoInOrdem(self.raiz)
+
 
     def _recursaoInOrdem(self, noAtual):
         if noAtual is not None:
             self._recursaoInOrdem(noAtual.esquerdo)
             print(noAtual.valor)
             self._recursaoInOrdem(noAtual.direito)
+
 
     def remover(self, valor):
         pass
@@ -58,14 +61,15 @@ arvore.adicionar(1)
 arvore.adicionar(7)
 arvore.adicionar(6)
 
-arvore.imprimirInOrdem()
 
+arvore.imprimirInOrdem()
+print('\n')
 
 
 """
 # ANOTAÇÕES:
-Ajustando a inserção de novos nós.
+Ajustando a empressão pré ordem
 
 TO-DO:
-Organizar a consulta para exibir os itens da árvore.
+Organizar impressão pré ordem e pós ordem
 """
